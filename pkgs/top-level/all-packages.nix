@@ -5177,7 +5177,7 @@ with pkgs;
 
   element-desktop = callPackage ../applications/networking/instant-messengers/element/element-desktop.nix {
     inherit (darwin.apple_sdk.frameworks) Security AppKit CoreServices;
-    electron = electron_28;
+    electron = electron_29;
   };
   element-desktop-wayland = writeScriptBin "element-desktop" ''
     #!/bin/sh
@@ -12516,8 +12516,6 @@ with pkgs;
 
   redir = callPackage ../tools/networking/redir { };
 
-  redmine = callPackage ../applications/version-management/redmine { };
-
   redpanda-client = callPackage ../servers/redpanda { };
 
   redpanda-server = redpanda-client.server;
@@ -18579,8 +18577,6 @@ with pkgs;
 
   cloudfoundry-cli = callPackage ../applications/networking/cluster/cloudfoundry-cli { };
 
-  clpm = callPackage ../development/tools/clpm { };
-
   coan = callPackage ../development/tools/analysis/coan { };
 
   coder = callPackage ../development/tools/coder { };
@@ -23142,8 +23138,6 @@ with pkgs;
   };
 
   libtorrent-rasterbar = libtorrent-rasterbar-2_0_x;
-
-  libtoxcore = callPackage ../development/libraries/libtoxcore { };
 
   libtpms = callPackage ../tools/security/libtpms { };
 
@@ -35263,8 +35257,6 @@ with pkgs;
 
   toipe = callPackage ../applications/misc/toipe { };
 
-  toxic = callPackage ../applications/networking/instant-messengers/toxic { };
-
   toxiproxy = callPackage ../development/tools/toxiproxy { };
 
   tqsl = callPackage ../applications/radio/tqsl { };
@@ -36231,8 +36223,6 @@ with pkgs;
   ytcast = callPackage ../tools/misc/ytcast { };
 
   ytcc = callPackage ../tools/networking/ytcc { };
-
-  ytmdesktop = callPackage ../applications/audio/ytmdesktop { };
 
   ytmdl = callPackage ../tools/misc/ytmdl { };
 
