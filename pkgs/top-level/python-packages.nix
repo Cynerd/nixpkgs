@@ -1887,6 +1887,9 @@ self: super: with self; {
   capstone = callPackage ../development/python-modules/capstone {
     inherit (pkgs) capstone;
   };
+  capstone_4 = callPackage ../development/python-modules/capstone/4.nix {
+    inherit (pkgs) capstone_4;
+  };
 
   captcha = callPackage ../development/python-modules/captcha { };
 
@@ -2935,6 +2938,8 @@ self: super: with self; {
   devpi-common = callPackage ../development/python-modules/devpi-common { };
 
   devtools = callPackage ../development/python-modules/devtools { };
+
+  dfdiskcache = callPackage ../development/python-modules/dfdiskcache { };
 
   diagrams = callPackage ../development/python-modules/diagrams { };
 
@@ -4611,6 +4616,8 @@ self: super: with self; {
 
   gdata = callPackage ../development/python-modules/gdata { };
 
+  gdb-pt-dump = callPackage ../development/python-modules/gdb-pt-dump { };
+
   gdcm = toPythonModule (pkgs.gdcm.override {
     inherit (self) python;
     enablePython = true;
@@ -4724,6 +4731,8 @@ self: super: with self; {
   gflags = callPackage ../development/python-modules/gflags { };
 
   gflanguages = callPackage ../development/python-modules/gflanguages { };
+
+  gfsubsets = callPackage ../development/python-modules/gfsubsets { };
 
   ghapi = callPackage ../development/python-modules/ghapi { };
 
@@ -5325,6 +5334,8 @@ self: super: with self; {
   hieroglyph = callPackage ../development/python-modules/hieroglyph { };
 
   hijri-converter = callPackage ../development/python-modules/hijri-converter { };
+
+  hikari = callPackage ../development/python-modules/hikari { };
 
   hikvision = callPackage ../development/python-modules/hikvision { };
 
@@ -7337,6 +7348,8 @@ self: super: with self; {
 
   microsoft-kiota-serialization-text = callPackage ../development/python-modules/microsoft-kiota-serialization-text { };
 
+  midea-beautiful-air = callPackage ../development/python-modules/midea-beautiful-air { };
+
   midiutil = callPackage ../development/python-modules/midiutil { };
 
   mido = callPackage ../development/python-modules/mido { };
@@ -8961,6 +8974,8 @@ self: super: with self; {
 
   omrdatasettools = callPackage ../development/python-modules/omrdatasettools { };
 
+  oncalendar = callPackage ../development/python-modules/oncalendar { };
+
   ondilo = callPackage ../development/python-modules/ondilo { };
 
   onetimepass = callPackage ../development/python-modules/onetimepass { };
@@ -9429,6 +9444,8 @@ self: super: with self; {
   pbkdf2 = callPackage ../development/python-modules/pbkdf2 { };
 
   pbr = callPackage ../development/python-modules/pbr { };
+
+  pbs-installer = callPackage ../development/python-modules/pbs-installer { };
 
   pc-ble-driver-py = toPythonModule (callPackage ../development/python-modules/pc-ble-driver-py { });
 
@@ -10381,6 +10398,8 @@ self: super: with self; {
   pweave = callPackage ../development/python-modules/pweave { };
 
   pwlf = callPackage ../development/python-modules/pwlf { };
+
+  pwndbg = callPackage ../development/python-modules/pwndbg { };
 
   pwntools = callPackage ../development/python-modules/pwntools {
     debugger = pkgs.gdb;
@@ -12824,6 +12843,8 @@ self: super: with self; {
 
   random2 = callPackage ../development/python-modules/random2 { };
 
+  randomfiletree = callPackage ../development/python-modules/randomfiletree { };
+
   range-typed-integers = callPackage ../development/python-modules/range-typed-integers { };
 
   rangehttpserver = callPackage ../development/python-modules/rangehttpserver { };
@@ -13745,6 +13766,8 @@ self: super: with self; {
 
   simplesat = callPackage ../development/python-modules/simplesat { };
 
+  simplesqlite = callPackage ../development/python-modules/simplesqlite { };
+
   simple-dftd3 = callPackage ../development/libraries/science/chemistry/simple-dftd3/python.nix {
     inherit (pkgs) simple-dftd3;
   };
@@ -14258,6 +14281,8 @@ self: super: with self; {
   sqlite-fts4 = callPackage ../development/python-modules/sqlite-fts4 { };
 
   sqlite-utils = callPackage ../development/python-modules/sqlite-utils { };
+
+  sqliteschema = callPackage ../development/python-modules/sqliteschema { };
 
   sqlmap = callPackage ../development/python-modules/sqlmap { };
 

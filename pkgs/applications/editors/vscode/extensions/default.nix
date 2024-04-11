@@ -3275,8 +3275,8 @@ let
           publisher = "myriad-dreamin";
           # Please update the corresponding binary (tinymist) when updating
           # this extension.
-          version = "0.11.1";
-          hash = "sha256-jyZBnT8UW94TVnZKZna1cJa/UIj+DwYwlAbU4pnaf04=";
+          version = "0.11.3";
+          hash = "sha256-b5aD4gz4j+QAEPmYaNnaputbYTPoFxVFih76HmznUP8=";
         };
 
         nativeBuildInputs = [ jq moreutils ];
@@ -4198,6 +4198,21 @@ let
           hash = "sha256-JKj6noi2dTe02PxX/kS117ZhW8u7Bhj4QowZQiJKP2E=";
         };
         meta = {
+          license = lib.licenses.mit;
+        };
+      };
+
+      teabyii.ayu = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          name = "ayu";
+          publisher = "teabyii";
+          version = "1.0.5";
+          sha256 = "sha256-+IFqgWliKr+qjBLmQlzF44XNbN7Br5a119v9WAnZOu4=";
+        };
+        meta = {
+          description = "A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.";
+          downloadPage = "https://marketplace.visualstudio.com/items?itemName=teabyii.ayu";
+          homepage = "https://github.com/ayu-theme/vscode-ayu";
           license = lib.licenses.mit;
         };
       };
